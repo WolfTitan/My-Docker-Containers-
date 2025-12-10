@@ -11,3 +11,11 @@ services:
     volumes:
       - /home/admin/Doker/Grafana/grafana-data:/var/lib/grafana
     restart: unless-stopped
+
+
+### Username: admin ### 
+### Password: admin ### 
+### Dashboard: 11074 ### 
+### Dashboard: 1860
+### Dashboard: 15172 ### 
+### Dashboard: 11207 ### 
