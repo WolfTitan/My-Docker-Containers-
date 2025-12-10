@@ -10,3 +10,7 @@ services:
       - SECRET_ENCRYPTION_KEY=904877debe259df882f42d5637f4e2f6e6dc8a22a94bffccc4fb91403c84ddd1
     ports:
       - '7575:7575'
+
+
+
+### dash. = https://dash.mauz.dev/ ##
