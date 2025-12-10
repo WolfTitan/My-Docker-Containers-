@@ -1,0 +1,18 @@
+version: "2.3"
+services:
+  emby:
+    image: emby/embyserver
+    container_name: embyserver
+    environment:
+      - UID=1000 # The UID to run emby as (default: 2)
+      - GID=1000 # The GID to run emby as (default 2)
+    volumes:
+      - /home/admin/MyDocuments/Configurations/Emby:/config # Configuration directory
+
+      - /media/Media/Media:/mnt1 # Media directory
+      - /media/Media3/Media:/mnt3 # Media directory
+      - /media/Media-Storage/Media:/mnt2 # Media directory
+      
+    ports:
+      - 8096:8096 # HTTP port
+    restart: unless-stopped
